@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+#calender{
+margin:0px 0px 30px 0px
+}
+
+    </style>
+</head>
+<body class="w3-light-grey w3-grayscale w3-large" style="max-width:1600px">
+<script>
+    let invalid_date="True";
+    if(invalid_date=="{{invalid_date}}")
+    alert("Enter valid date");
+</script>
+<div style="margin:120px">
+    <div class="w3-col m12">
+        <form action="\new" method="post">
+        <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+
+                <div id="calender" style="margin-bottom=50px">
+                    <input type="date" id="start" name="calender"
+
+                           min="2022-01-01" max="2022-12-31">
+                </div>
+                <div style="margin:20px 0 px">
+
+                    <textarea class="w3-border"id="data" name="article_data" style="resize:none" cols="120" rows="10" placeholder="Enter text here"></textarea>
+
+                </div>
+                <input type="submit" class="w3-button w3-theme" >
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<script>
+    function submit()
+    {
+    var d={{data}};
+    d=document.getElementById('data');
+    }
+</script>
+</body>
+</html>
